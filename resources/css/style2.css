@@ -1,3 +1,7 @@
+body {
+  display: block;
+}
+
 header {
   display: flex;
   border-bottom: 1px solid black;
@@ -13,19 +17,144 @@ header {
   background-color: white;
   height: 80px;
 }
+
 .logo{
   display: flex;
   align-items: center;
   flex-grow: 1;
   padding-left: 30px;
 }
+
 header nav {
-    padding: 40px;
+  padding: 40px;
 }
+
 a {
   color: black;
 }
+
 nav span {
   display: inline-block;
   padding: 20px 10px;
 }
+
+.content {
+  display: flex;
+  width: 100%;
+  padding-top: 116px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+  flex-direction: column;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+div {
+  /*/ border: 1px solid black; /*/
+}
+
+.narrative {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  margin: 16px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.image-content span {
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.lead-story .image-content {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-main.png);
+  width: 630px;
+  margin-top: 0;
+  font-size: 40px;
+  text-align: left;
+}
+.cat.image-content {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-1.png);
+}
+
+.image-content.fall {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-2.png);
+}
+.image-content.camera {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-story-3.png)
+}
+
+.stories {
+display: flex;
+}
+
+.news-bites H3 {
+  font-size: 16px;
+ font-weight: bold;
+}
+
+.bite {
+display: flex;
+align-items: flex-start;
+background-color: WhiteSmoke;
+font-family: Verdana;
+font-size: 12px;
+color: DimGray;
+padding: 15px;
+border-bottom: 1px solid black;
+}
+
+
+footer {
+  display: flex;
+width: 100%;
+background-color: MediumAquamarine;
+ margin: auto;
+ font-family: Verdana;
+ font-size: 12px;
+ height: 300px;
+
+ justify-content: center;
+ flex-direction: column;
+ align-items: center;
+
+}
+footer .title {
+  font-family: Georgia;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+footer nav {
+      display: inline-block;
+      padding-left: 25px;
+    }
